@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res/com.apps.fundrive"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+     >
+
+    <com.example.util.RoundedImageView
+        android:id="@+id/image_ringcategory"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_picture"
+        app:border_color="@color/divider_clr"
+        app:border_width="1dip"
+        app:corner_radius="30dip"
+        app:is_oval="true"
+        app:round_background="true" />
+
+    <TextView
+        android:id="@+id/text_ringcategty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_ringcategory"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/listtext_clr" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.apps.fundrive"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ringlist_hoverbtnselect"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" >
+
+        <com.example.util.RoundedImageView
+            android:id="@+id/img_default"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_icon"
+            app:border_color="@color/divider_clr"
+            app:border_width="1dip"
+            app:corner_radius="30dip"
+            app:is_oval="true"
+            app:round_background="true" />
+
+        <com.example.util.RoundedImageView
+            android:id="@+id/imageView1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ringtlist_defaultbtn"
+            app:border_color="@color/divider_clr"
+            app:border_width="1dip"
+            app:is_oval="true"
+            app:round_background="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_ringname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/infotext_clr" />
+
+        <TextView
+            android:id="@+id/text_ringcatname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ringlistdown_icon" />
+
+            <TextView
+                android:id="@+id/text_ringlistdown"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/sizedowntext_clr" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

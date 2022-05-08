@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/more_overicon"
+        android:showAsAction="always"
+        android:title=""> 
+      
+         <menu >
+      		
+			    <!-- my favorite -->
+			    <item android:id="@+id/menu_slidefav"
+ 			          android:title="@string/slide_menufav"
+			          android:showAsAction="ifRoom|withText"/>
+			     
+			     <!-- my download -->
+			    <item android:id="@+id/menu_slidedown"
+ 			          android:title="@string/slide_menudown"
+			          android:showAsAction="ifRoom|withText"/>
+			    
+   
+    	</menu>
+    	
+    </item>
+
+</menu>

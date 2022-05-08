@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/more_overicon"
+        android:showAsAction="always"
+        android:title=""> 
+      
+         <menu >
+      		
+			    <!-- setaswallpaper -->
+			    <item android:id="@+id/menu_setaswallaper"
+			          android:icon="@drawable/icon_setwall"
+			          android:title="@string/menu_setaswallpaper"
+			          android:showAsAction="ifRoom|withText"/>
+			     
+			     <!-- Pinch Zoom -->
+			    <item android:id="@+id/menu_zoom"
+			          android:icon="@drawable/icon_zoom"
+			          android:title="@string/menu_zoom"
+			          android:showAsAction="ifRoom|withText"/>
+			    
+   
+    	</menu>
+    	
+    </item>
+
+</menu>

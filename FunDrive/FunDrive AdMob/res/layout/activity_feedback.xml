@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".WallMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp" >
+        
+          <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:drawableLeft="@drawable/user"
+            android:drawableStart="@drawable/user"
+            android:hint="@string/feedback_name"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+             android:textCursorDrawable="@null"
+            android:layout_margin="10dp"
+            android:textColor="@color/wall_textcolor"
+            android:textColorHint="#cccccc" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:drawableLeft="@drawable/email"
+            android:drawableStart="@drawable/email"
+            android:hint="@string/feedback_email"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+             android:textCursorDrawable="@null"
+            android:textColor="@color/wall_textcolor"
+            android:textColorHint="#cccccc" />
+
+        <EditText
+            android:id="@+id/etMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:background="@drawable/edittext_top_bg"
+            android:drawableLeft="@drawable/postal_address"
+            android:drawableStart="@drawable/postal_address"
+            android:hint="@string/feedback_msg"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+             android:textCursorDrawable="@null"
+            android:layout_margin="10dp"
+            android:textColor="@color/wall_textcolor"
+            android:textColorHint="#cccccc" />
+
+        <Button
+            android:id="@+id/btnFeedback"
+            style="@style/DefaultButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+             android:background="@drawable/feedback_hoverbtnselect"
+                 android:textColor="@color/wall_textcolor"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

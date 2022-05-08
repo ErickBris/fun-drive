@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg" >
+
+    <Spinner
+        android:id="@+id/spinner_selectcate"
+        style="@style/mySpinnerStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_selecrcate"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/upload_edttxt_border" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_addrtitle"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/upload_edttxt_border"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Ringtone Title"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_addrtag"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/upload_edttxt_border"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Tag"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/chooserimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_addrimage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/add_image"
+            android:textColor="@color/upload_scrntext_clr"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/uploadrimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chooserimg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView_chooserimgshow"
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="3dp"
+                android:src="@drawable/app_icon" />
+
+            <Button
+                android:id="@+id/button_chooseringimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/button_border"
+                android:text="@string/choose_img"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button_rimgupload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_border"
+                android:text="@string/upload_image"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/button_border"
+        android:text="@string/submit"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chooserimg" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:background="@drawable/button_border"
+        android:text="@string/upload" />
+
+    <TextView
+        android:id="@+id/text_selecrcate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="@string/upload_selecrcate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/upload_scrntext_clr"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_addrtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_selectcate"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Ringtone Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/upload_scrntext_clr"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_addrtag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Tag"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/upload_scrntext_clr"
+        android:textSize="15sp" />
+
+</RelativeLayout>

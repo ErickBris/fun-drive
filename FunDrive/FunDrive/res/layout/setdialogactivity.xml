@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/custom_dialog" >
+
+        <LinearLayout
+            android:id="@+id/setring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image_setring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_set_ringtone" />
+
+            <TextView
+                android:id="@+id/text_setring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:text="@string/set_ring"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/upload_textcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setringnotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setring"
+            android:layout_below="@+id/setring"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image_setringnotifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_set_notitification" />
+
+            <TextView
+                android:id="@+id/text_setringnotifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:text="@string/set_ringnotification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/upload_textcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setringalam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setring"
+            android:layout_below="@+id/setringnotifi"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image_setringalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_set_alarm" />
+
+            <TextView
+                android:id="@+id/text_setringalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:text="@string/set_ringalarm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/upload_textcolor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

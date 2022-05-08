@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_clr" >
+
+    <RelativeLayout
+        android:id="@+id/playsec"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/centersec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/image_ringplayicon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/playsecbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/app_icon" />
+
+        <LinearLayout
+            android:id="@+id/playsecbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/playsecbg_clr" >
+
+            <ImageView
+                android:id="@+id/image_playvideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/play_btn" />
+
+            <TextView
+                android:id="@+id/text_videoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/titletext_clr"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/centersec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/infosec"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/btnsecbg_clr" >
+
+        <LinearLayout
+            android:id="@+id/linear_dwn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <ImageView
+                android:id="@+id/image_rshare"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/share_hoverbtnselect" />
+
+            <ImageView
+                android:id="@+id/image_rfavicon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/fav_hoverbtnselect" />
+
+            <TextView
+                android:id="@+id/text_rate_cnt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/rate_hoverbtnselect"
+                android:gravity="center"
+                android:text="2/5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#00FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/infosec"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/textuploadr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_uploadnamer"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:text="Uploaded by"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <TextView
+            android:id="@+id/text_uploadnamer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/infotext_clr" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/texttagr"
+            android:background="@color/viewline_clr" />
+
+        <TextView
+            android:id="@+id/text_tagnamer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/infotext_clr" />
+
+        <TextView
+            android:id="@+id/texttagr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_tagnamer"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:text="Tags"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <TextView
+            android:id="@+id/textcategoryr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_categoryr"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:text="Category"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <TextView
+            android:id="@+id/text_categoryr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/infotext_clr" />
+
+        <TextView
+            android:id="@+id/text_sizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:text="No Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/sizedowntext_clr" />
+
+        <TextView
+            android:id="@+id/textsizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_sizer"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:text="Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+    </RelativeLayout>
+
+</RelativeLayout>

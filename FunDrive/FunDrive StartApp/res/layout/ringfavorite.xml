@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_clr" >
+
+    <ListView
+        android:id="@+id/latest_listfav"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#000000"
+        android:divider="@color/divider_clr"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/img_no"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textdefault_clr"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_clr" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btmsec" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/desc" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btmsec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/infosec"
+        android:layout_alignParentLeft="true"
+        android:background="@color/btnsecbg_clr" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linear_dwnd"
+            android:orientation="horizontal"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/image_downl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/download_hoverbtnselect" />
+
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/share_hoverbtnselect" />
+
+            <ImageView
+                android:id="@+id/image_favadd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/fav_hoverbtnselect" />
+
+            <TextView
+                android:id="@+id/text_rate_cnt"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/rate_hoverbtnselect"
+                android:text="2/5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#00FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_dwnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_wcountname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="Downloads"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textdefault_clr" />
+
+            <TextView
+                android:id="@+id/text_wallcountd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/sizedowntext_clr" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/infosec"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/adView" >
+
+        <TextView
+            android:id="@+id/textupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:text="Uploaded by"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <TextView
+            android:id="@+id/text_uploadname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textupload"
+            android:layout_margin="2dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/infotext_clr" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/texttag"
+            android:background="@color/viewline_clr" />
+
+        <TextView
+            android:id="@+id/text_tagname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/infotext_clr" />
+
+        <TextView
+            android:id="@+id/texttag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_tagname"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:text="Tags"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <TextView
+            android:id="@+id/textcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:text="Category"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textcategory"
+            android:layout_margin="2dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/infotext_clr" />
+
+        <TextView
+            android:id="@+id/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/sizedowntext_clr" />
+
+        <TextView
+            android:id="@+id/textsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_size"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:text="Size"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/textdefault_clr" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_publisher_id" />
+
+</RelativeLayout>

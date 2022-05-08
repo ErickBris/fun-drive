@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_border"
+    android:orientation="vertical"
+    android:padding="1dp"
+     >
+
+    <ImageView
+        android:id="@+id/img_subcategory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#64000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/text_subcate_imgtitle"
+        style="@style/movie.listitem.title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_subcategory"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip"
+        android:textColor="@color/listtext_clr"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_playdefault"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@+id/img_subcategory"
+        android:layout_alignRight="@+id/img_subcategory"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/play_btndefault" />
+
+</RelativeLayout>

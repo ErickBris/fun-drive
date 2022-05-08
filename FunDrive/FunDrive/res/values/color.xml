@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="m_tab_clr">#009688</color>
+    <color name="m_tab_select_accent_clr">#ffc400</color>
+    
+    <color name="background_clr">#fafafa</color>
+    <color name="playsecbg_clr">#99000000</color>
+    <color name="btnsecbg_clr">#e2e8e4</color>
+    <color name="textdefault_clr">#a8a8a8</color>
+    <color name="infotext_clr">#4d4d4d</color>
+    <color name="sizedowntext_clr">#25a45d</color>
+    <color name="titletext_clr">#fafafa</color>
+    <color name="divider_clr">#b5b5b5</color>
+    <color name="listtext_clr">#4d4d4d</color>
+    <color name="viewline_clr">#b5b5b5</color>
+    <color name="wall_textcolor">#000000</color>
+    <color name="upload_textcolor">#ffffff</color>
+    <color name="slidebackground_clr">#3e4f45</color>
+    <color name="slidegridbg_clr">#ffffff</color>
+    <color name="upload_scrntext_clr">#ffffff</color>
+    
+    <color name="movieListTextColor">#ff646769</color>
+ <color name="color">#FF0040</color>
+</resources>
